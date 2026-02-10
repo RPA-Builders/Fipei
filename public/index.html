@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fipei | consulta rapida FIPE</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-orb orb-a"></div>
+    <div class="bg-orb orb-b"></div>
+
+    <main class="page">
+      <header class="hero">
+        <div class="brand-row">
+          <div class="logo">
+            <img src="logo-fipei.svg" alt="Fipei" class="logo-img" />
+            <span class="logo-text">Fipei</span>
+          </div>
+          <span class="tagline">consulta rapida FIPE</span>
+        </div>
+        <h1>Valores FIPE e dados completos de veiculos em segundos.</h1>
+        <p class="lead">
+          Cole codigos FIPE ou envie um arquivo .txt. O Fipei consulta a API publica e devolve valor, ano, marca e todos
+          os dados disponiveis.
+        </p>
+        <div class="badge-row">
+          <span class="badge">TXT ou manual</span>
+          <span class="badge">Exportacao rapida</span>
+          <span class="badge">API publica</span>
+        </div>
+      </header>
+
+      <section class="panel">
+        <form id="fipe-form" class="form">
+          <label class="field">
+            <span>Codigos FIPE (um por linha)</span>
+            <textarea
+              id="codes"
+              rows="6"
+              placeholder="Ex.: 001004-9&#10;002079-2&#10;003192-1"
+            ></textarea>
+          </label>
+
+          <label class="field file-field">
+            <span>Ou envie um arquivo .txt</span>
+            <input id="file" type="file" accept=".txt" />
+          </label>
+
+          <div class="actions">
+            <button id="submit" type="submit">Consultar</button>
+            <span id="status" class="status" aria-live="polite"></span>
+          </div>
+        </form>
+      </section>
+
+      <section class="results">
+        <div class="results-header">
+          <div class="results-title">
+            <h2>Resultados</h2>
+            <p id="summary">Nenhuma consulta realizada.</p>
+          </div>
+          <div class="results-actions">
+            <label class="select-group">
+              <span>Formato</span>
+              <select id="export-format">
+                <option value="json">JSON (completo)</option>
+                <option value="csv">CSV (resumo)</option>
+              </select>
+            </label>
+            <button id="export" type="button" class="secondary" disabled>Exportar</button>
+          </div>
+        </div>
+        <div id="results" class="results-grid"></div>
+      </section>
+
+      <footer class="footer">
+        <p>
+          Dica: use o formato <strong>000000-0</strong>. Os dados sao exibidos exatamente como retornados pela API.
+        </p>
+      </footer>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

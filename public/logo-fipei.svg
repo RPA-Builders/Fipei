@@ -1,0 +1,13 @@
+﻿<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="fipeiGradient" x1="16" y1="0" x2="112" y2="128" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#F7B733" />
+      <stop offset="100%" stop-color="#2EC4B6" />
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="112" height="112" rx="28" fill="url(#fipeiGradient)" />
+  <path
+    d="M46 36H86C90.418 36 94 39.582 94 44C94 48.418 90.418 52 86 52H58V66H82C86.418 66 90 69.582 90 74C90 78.418 86.418 82 82 82H58V92C58 96.418 54.418 100 50 100C45.582 100 42 96.418 42 92V40C42 37.791 43.791 36 46 36Z"
+    fill="#0B1024"
+  />
+</svg>
