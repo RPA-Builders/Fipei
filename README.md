@@ -16,6 +16,10 @@ Aplicativo web simples e moderno para consultar codigos FIPE. O usuario pode col
 - Visual moderno e responsivo
 - Exportacao de resultados em **JSON** ou **CSV**
 
+## Nota
+
+Pequena atualizacao de documentacao para novo commit.
+
 ## Como rodar localmente
 
 Requisitos: **Node.js 18+**.
