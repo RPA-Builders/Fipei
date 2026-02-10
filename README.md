@@ -115,8 +115,7 @@ node server.js
 Desenvolvedor focado em automacao, integracoes e produtos web. Este projeto demonstra capacidade de criar uma solucao completa do zero: interface, backend, integracao com API e exportacao de dados.
 
 - GitHub: https://github.com/luizvinicius2219
-- LinkedIn: adicione seu link
-- Portfolio: adicione seu link
+- LinkedIn: https://www.linkedin.com/in/devluizvinicius/
 
 ## Deploy rapido
 
